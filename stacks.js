@@ -54,7 +54,8 @@ console.log('Pop last book', stack.pop());
 console.log('Last book is ', stack.look());
 
 //pushing another book
-console.log('New book is 100 ', stack.push(100));
+console.log('New book is 100 ');
+stack.push(100);
 
 //Looking looking looking...
 console.log('Last book is now ', stack.look());
