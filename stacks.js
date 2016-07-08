@@ -14,7 +14,7 @@ stackOfBooks.prototype.pop = function(){
     if (this.top < 0){
         return null;
     }
-    var topBook = this.value = this.value[this.top];
+    var topBook = this.value[this.top];
     this.top--;
 
     this.value.length--;
@@ -33,7 +33,7 @@ stackOfBooks.prototype.look = function(){
 //testing the above functions
 var stack = new stackOfBooks();
 
-for (var i = 0; i <= 20; i++){
+for (var i = 0; i <= 20; i+=5){
     console.log('Push ', i);
     stack.push(i);
 }
@@ -43,3 +43,12 @@ console.log('Last book is ', stack.look());
 
 //Poping last book added
 console.log('Pop last book', stack.pop());
+
+//Looking looking looking...
+console.log('Last book is ', stack.look());
+
+//Poping last book added
+console.log('Pop last book', stack.pop());
+
+//Looking looking looking...
+console.log('Last book is ', stack.look());
