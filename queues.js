@@ -1,4 +1,4 @@
-function function queueOfShoppers{
+function queueOfShoppers(){
     this.head = 0; //Initialised to 0 to indicate the position of the first item, assuming the array contains 1 item.  
     this.data = []; //Initialised as an empty array.
 }
@@ -44,7 +44,7 @@ console.log('Dequeue: ' + queue.dequeue());
 //All the elements in the array at indexes less than the head are garbage.  
 //To fix this we cleanup the array, we do not have to slow down for each dequeue, we cleanup at a certain preset threshhold.  
 
-queue.prototype.dequeue = function(){
+queueOfShoppers.prototype.dequeue = function(){
     if (this.head < 0 || this.head >= this.data.length){
         return null;
     }
