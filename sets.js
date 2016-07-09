@@ -53,7 +53,7 @@ jsSet.prototype.union = function(setTwo){
             unionSet.add(key);
         }
     }
-    console.log('unionSet is ',unionSet);
+    console.log('unionSet is ',unionSet, 'setTwo is ', setTwo);
     return unionSet;
 }
 
