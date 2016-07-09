@@ -59,7 +59,7 @@ jsSet.prototype.union = function(setTwo){
 
 
  testMySet.union(12);
-console.log('checking union of setTwo ',testMySet.union(setTwoData));
+console.log('checking union of setTwo ',testMySet.union(15));
 
 // jsSet.prototype.intesect = function(setTwo){
 //     var interSet = new jsSet();
