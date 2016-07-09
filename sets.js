@@ -27,6 +27,13 @@ testMySet.remove(2);
 console.log('print testMySet ',testMySet);
 
 
+
+var testMy2ndSet = new jsSet();
+testMy2ndSet.add(11);
+testMy2ndSet.add(2);
+testMy2ndSet.add(13);
+console.log('print testMy2ndSet ',testMy2ndSet);
+
 jsSet.prototype.exists = function(data){
     if (this.set.hasOwnProperty(data)){
         return true;
@@ -60,8 +67,8 @@ jsSet.prototype.union = function(setTwo){
 }
 
 
- testMySet.union(12);
-console.log('checking union of setTwo ',testMySet.union(15));
+ // testMySet.union(testMy2ndSet);
+console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
 
 // jsSet.prototype.intesect = function(setTwo){
 //     var interSet = new jsSet();
