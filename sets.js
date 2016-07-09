@@ -17,14 +17,14 @@ jsSet.prototype.remove = function(data){
     }
 }
 
-var testMySet = new jsSet();
-testMySet.add(1);
-testMySet.add(2);
-testMySet.add(3);
-console.log('print testMySet ',testMySet);
+var testMy1stSet = new jsSet();
+testMy1stSet.add(1);
+testMy1stSet.add(2);
+testMy1stSet.add(3);
+console.log('print testMy1stSet ',testMy1stSet);
 console.log('removing 2');
-testMySet.remove(2);
-console.log('print testMySet ',testMySet);
+testMy1stSet.remove(2);
+console.log('print testMy1stSet ',testMy1stSet);
 
 
 
@@ -44,9 +44,9 @@ jsSet.prototype.exists = function(data){
 }
 
 // testMySet.exists(1);
-console.log('check is set with valie 1 exists for first set',testMySet.exists(1));
+// console.log('check is set with valie 1 exists for first set',testMySet.exists(1));
 //true
-console.log('check is set with valie 13 exists for 2nd set',testMy2ndSet.exists(13));
+// console.log('check is set with valie 13 exists for 2nd set',testMy2ndSet.exists(13));
 //true
 
 // var setTwoData = {12: 'true'};
@@ -54,24 +54,24 @@ console.log('check is set with valie 13 exists for 2nd set',testMy2ndSet.exists(
 jsSet.prototype.union = function(setTwo){
     var unionSet = new jsSet();
     for (var key in this.set){
-        console.log('this.set is ', this.set, 'this.set.key',key);
         if (this.set.hasOwnProperty(key)){
+            console.log('1st testMy2ndSet  is ', this.set, 'testMy2ndSet.key',key);
             unionSet.add(key);
         }
     }
     for (var key in setTwo){
-        console.log('setTwo is ', setTwo, 'setTow key is ', key);
         if (!unionSet.set.hasOwnProperty(key)){
+            console.log('testMy1stSet is ', setTwo, 'testMy1stSet key is ', key);
             unionSet.add(key);
         }
     }
-    console.log('result unionSet is ',unionSet, 'setTwo is ', setTwo);
+    console.log('result unionSet is ',unionSet);
     return unionSet;
 }
 
 
  // testMySet.
- testMy2ndSet.union(testMySet);
+ testMy2ndSet.union(testMy1stSet);
 // console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
 
 // jsSet.prototype.intesect = function(setTwo){
@@ -85,7 +85,7 @@ jsSet.prototype.union = function(setTwo){
 // }
 
 // testMySet.intesect(112);
-console.log('print testMySet ',testMySet);
+// console.log('print testMySet ',testMySet);
 
 
 
