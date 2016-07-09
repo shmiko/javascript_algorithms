@@ -50,7 +50,7 @@ jsSet.prototype.union = function(setTwo){
         }
     }
     for (var key in setTwo.set){
-        console.log('setTwo is ', setTwo);
+        console.log('setTwo is ', setTwo, 'setTow key is ', key);
         if (!unionSet.set.hasOwnProperty(key)){
             unionSet.add(key);
         }
