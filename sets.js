@@ -29,6 +29,7 @@ console.log('print testMySet ',testMySet);
 
 
 var testMy2ndSet = new jsSet();
+console.log('ading data to testMy2ndSet ');
 testMy2ndSet.add(11);
 testMy2ndSet.add(2);
 testMy2ndSet.add(13);
@@ -43,7 +44,9 @@ jsSet.prototype.exists = function(data){
 }
 
 // testMySet.exists(1);
-console.log('check is set with valie 1 exists ',testMySet.exists(1));
+console.log('check is set with valie 1 exists for first set',testMySet.exists(1));
+//true
+console.log('check is set with valie 13 exists for 2nd set',testMy2ndSet.exists(13));
 //true
 
 var setTwoData = {12: 'true'};
