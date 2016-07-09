@@ -31,7 +31,7 @@ console.log('print testMySet ',testMySet);
 var testMy2ndSet = new jsSet();
 console.log('ading data to testMy2ndSet ');
 testMy2ndSet.add(11);
-testMy2ndSet.add(2);
+testMy2ndSet.add(3);
 testMy2ndSet.add(13);
 console.log('print testMy2ndSet ',testMy2ndSet);
 
@@ -70,7 +70,8 @@ jsSet.prototype.union = function(setTwo){
 }
 
 
- testMySet.union(testMy2ndSet);
+ // testMySet.
+ testMy2ndSet.union(testMySet);
 // console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
 
 // jsSet.prototype.intesect = function(setTwo){
