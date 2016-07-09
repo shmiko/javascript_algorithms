@@ -44,11 +44,13 @@ var setTwoData = {12: 'true'};
 jsSet.prototype.union = function(setTwo){
     var unionSet = new jsSet();
     for (var key in this.set){
+        console.log('this.set is ', this.set);
         if (this.set.hasOwnProperty(key)){
             unionSet.add(key);
         }
     }
     for (var key in setTwo.set){
+        console.log('setTwo is ', setTwo);
         if (!unionSet.set.hasOwnProperty(key)){
             unionSet.add(key);
         }
