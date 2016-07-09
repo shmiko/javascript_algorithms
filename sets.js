@@ -4,7 +4,7 @@ function jsSet(){
 }
 
 jsSet.prototype.add = function(data){
-    if (!(this.set.hasOwnProperty(data))){
+    if (!(this.set.hasOwnProperty(data))) {
         this.set[data] = 'true';
         this.size++;
     }
@@ -39,7 +39,7 @@ jsSet.prototype.exists = function(data){
 console.log('check is set with valie 1 exists ',testMySet.exists(1));
 //true
 
-var setTwoData = {'12': 'true'};
+var setTwoData = {12: 'true'};
 
 jsSet.prototype.union = function(setTwo){
     var unionSet = new jsSet();
@@ -59,24 +59,20 @@ jsSet.prototype.union = function(setTwo){
 
 
 // testMySet.union(12);
-console.log('checking union of setTwo ',testMySet.union(setTwoData));
+// console.log('checking union of setTwo ',testMySet.union(setTwoData));
 
-jsSet.prototype.intesect = function(setTwo){
-    var interSet = new jsSet();
-    for (var key in this.set){
-        if (setTwo.set.hasOwnProperty(key)){
-            interSet.add(key);
-        }
-    }
-    return interSet;
-}
+// jsSet.prototype.intesect = function(setTwo){
+//     var interSet = new jsSet();
+//     for (var key in this.set){
+//         if (setTwo.set.hasOwnProperty(key)){
+//             interSet.add(key);
+//         }
+//     }
+//     return interSet;
+// }
 
-testMySet.intesect(112);
+// testMySet.intesect(112);
 console.log('print testMySet ',testMySet);
-
-
-
-
 
 
 
