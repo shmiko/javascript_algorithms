@@ -49,7 +49,7 @@ console.log('check is set with valie 1 exists for first set',testMySet.exists(1)
 console.log('check is set with valie 13 exists for 2nd set',testMy2ndSet.exists(13));
 //true
 
-var setTwoData = {12: 'true'};
+// var setTwoData = {12: 'true'};
 
 jsSet.prototype.union = function(setTwo){
     var unionSet = new jsSet();
@@ -70,8 +70,8 @@ jsSet.prototype.union = function(setTwo){
 }
 
 
- // testMySet.union(testMy2ndSet);
-console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
+ testMySet.union(testMy2ndSet);
+// console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
 
 // jsSet.prototype.intesect = function(setTwo){
 //     var interSet = new jsSet();
