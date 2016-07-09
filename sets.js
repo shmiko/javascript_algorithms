@@ -35,6 +35,12 @@ jsSet.prototype.exists = function(data){
     }
 }
 
+// testMySet.exists(1);
+console.log('check is set with valie 1 exists ',testMySet.exists(1));
+//true
+
+var setTwoData = {'12': 'true'};
+
 jsSet.prototype.union = function(setTwo){
     var unionSet = new jsSet();
     for (var key in this.set){
@@ -47,8 +53,13 @@ jsSet.prototype.union = function(setTwo){
             unionSet.add(key);
         }
     }
+    console.log('unionSet is ',unionSet);
     return unionSet;
 }
+
+
+// testMySet.union(12);
+console.log('checking union of setTwo ',testMySet.union(setTwoData));
 
 jsSet.prototype.intesect = function(setTwo){
     var interSet = new jsSet();
@@ -59,6 +70,14 @@ jsSet.prototype.intesect = function(setTwo){
     }
     return interSet;
 }
+
+testMySet.intesect(112);
+console.log('print testMySet ',testMySet);
+
+
+
+
+
 
 
 
