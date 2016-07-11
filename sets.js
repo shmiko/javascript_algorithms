@@ -1,6 +1,7 @@
 function jsSet(){
-    this.set = {}; //initialise an empty object
+    this.set = {}; 
     this.size = 0; //initialise the size starting at 0
+    var items = {};
 }
 
 jsSet.prototype.add = function(data){
