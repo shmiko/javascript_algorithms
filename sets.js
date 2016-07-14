@@ -85,7 +85,7 @@ jsSet.prototype.union = function(setTwo){
 //     return interSet;
 // }
 
-// testMySet.intesect(112);
+testMySet.intesect(112);
 console.log('print testMySet ',testMySet);
 
 
