@@ -68,6 +68,7 @@ jsSet.prototype.union = function(setTwo){
     }
     console.log('result unionSet is ',unionSet);
     return unionSet;
+    
 }
 
 
