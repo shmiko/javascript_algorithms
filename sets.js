@@ -68,11 +68,14 @@ jsSet.prototype.union = function(setTwo){
     }
     console.log('result unionSet is ',unionSet);
     return unionSet;
-    
+
 }
 
 
- testMySet.
+
+
+
+ // testMySet.
  testMy2ndSet.union(testMy1stSet);
 // console.log('checking union of setTwo ',testMySet.union(testMy2ndSet));
 
