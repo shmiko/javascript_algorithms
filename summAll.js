@@ -29,10 +29,3 @@ console.log('2nd total is ', sumAll2([4,1]));
 var checkSum = sumAll2([5,10]);
 console.log('3rd total is ', checkSum);
 
-function diffArray(arr1, arr2) {
-  var newArr = [];
-  // Same, same; but different.
-  return newArr;
-}
-
-diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
