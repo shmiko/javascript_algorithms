@@ -26,3 +26,22 @@ var bar = foo;
 console.log(bar);
 foo.x = foo = {n: 2};
 console.log(foo.x);
+
+//make this work
+//add(2)(3);
+
+var add = function(x){
+	return function(y){
+		return x + y;
+	}
+}
+
+console.log(add(2)(3));
+
+var o='';
+for (var i=1; i<=100; i++) {
+    i%3 || (o+='Fizz ');
+    i%5 || (o+='Buzz ');
+    !(i%3 && i%5) || (o+=(i+' '));
+}
+console.log(o);
