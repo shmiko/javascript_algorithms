@@ -104,3 +104,10 @@ String.prototype.spacify2 = function(){
 };
 
 console.log('hello world'.spacify2());
+
+
+function log(){
+  console.log.apply(console, arguments);
+};
+
+log('gday', 'world');
