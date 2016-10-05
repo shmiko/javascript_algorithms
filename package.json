@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/shmiko/javascript_algorithms/issues"
   },
-  "homepage": "https://github.com/shmiko/javascript_algorithms#readme"
+  "homepage": "https://github.com/shmiko/javascript_algorithms#readme",
+  "dependencies": {
+    "browserify": "^13.1.0",
+    "chokidar": "^1.6.0",
+    "hound": "^1.0.4",
+    "httpdispatcher": "^1.0.0"
+  }
 }

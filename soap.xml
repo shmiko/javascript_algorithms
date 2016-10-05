@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap12:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+<soap12:Header>
+<Authenticate xmlns="http://Printstream.org/">
+<RecipientID>web2PS</RecipientID>
+<Password>ok</Password>
+<CompanyCode>01</CompanyCode>
+<PlantCode>0100</PlantCode>
+<AccountNo>HOUSEACC</AccountNo>
+</Authenticate>
+</soap12:Header>
+<soap12:Body>
+<SubmitOrder xmlns='http://Printstream.org/'>
+<InputXML><![CDATA[<pbs:OrderList xmlns:pbs="www.streamlinesolutions.com/SchemaDef/OrderEntry/BaseSchema"><pbs:Order CustomerID="" ProjectID="6" CustomerOrderID="W1586060" CustomerBatchID="BatchID" ChargeType="0" NeedDate="2016-08-30" OrderTransactionID="" OrderAuthorizeDateTime="2016-08-30T00:00:00" ExternalPaymentMethod="" >
+<pbs:SOType Name="NEXTDAY" LookupName="true"/>
+<pbs:OrderBy CustomerRecipientID="HOUSEACC" CustomerID="2" FirstName="Trish" LastName="Hamer" DayPhone="0412362154" Mobile="" Fax="" Email="Trishhamer123@" CompanyName="" LookupName="true">
+<pbs:Address City="Cheltenham" State="VIC" Zip="3192" AddressLine1="65 Wallingford Street" AddressLine2="">
+<pbs:Country Code="AUS" LookupName="true"/>
+</pbs:Address>
+</pbs:OrderBy>
+<pbs:ShipTo CustomerRecipientID="HOUSEACC" CustomerID="2" FirstName="Trish" LastName="Hamer" DayPhone="0412362154" Fax="" Email="Trishhamer123@" CompanyName="" LookupName="true">
+<pbs:Address City="Cheltenham" State="VIC" Zip="3192" AddressLine1="65 Wallingford Street" AddressLine2="" ExternalComment="Leave at front door if no answer please">
+<pbs:Country Code="AUS" LookupName="true"/>
+</pbs:Address>
+</pbs:ShipTo>
+<pbs:BillTo CustomerRecipientID="HOUSEACC" CustomerID="2" FirstName="Trish" LastName="Hamer" DayPhone="0412362154" Fax="" Email="Trishhamer123@" CompanyName="" LookupName="true">
+<pbs:Address City="Cheltenham" State="VIC" Zip="3192" AddressLine1="65 Wallingford Street" AddressLine2="">
+<pbs:Country Code="AUS" LookupName="true"/>
+</pbs:Address>
+</pbs:BillTo>
+<pbs:OrderItemList>
+<pbs:OrderItem Quantity="100" CustomerOrderID="W1586060" PackageNotes="" FileNotes="" NominationID="" CreatedDate="2016-08-30T00:00:00" CostCenter="" UnitPrice="0.00">
+<pbs:Product InventoryCode="TEST123456" ItemDescription="BoM $1500 Cash Back A5 flyer"  RevisionCode="1"/>
+<pbs:ShippingMode Name="ROAD" LookupName="true"/>
+<pbs:OrderItemVariableFields>
+<pbs:VariableField Sequence="16" FieldName="ARIBALINENO" Value=""/>
+</pbs:OrderItemVariableFields>
+</pbs:OrderItem>
+</pbs:OrderItemList>
+<pbs:OrderVariableFields>
+<pbs:VariableField Sequence="1" FieldName="ORDERSNAME" Value="Standard User (HOUSEA"/>
+<pbs:VariableField Sequence="2" FieldName="SCUSTREF" Value="Customer Ref"/>
+<pbs:VariableField Sequence="3" FieldName="EXTRACUSTREF" Value=""/>
+<pbs:VariableField Sequence="4" FieldName="DELIVERTTIME" Value=""/>
+<pbs:VariableField Sequence="5" FieldName="COSTCENTER" Value=""/>
+<pbs:VariableField Sequence="6" FieldName="FEEWAIVE" Value=""/>
+<pbs:VariableField Sequence="7" FieldName="AURTHLEAVE" Value="N"/>
+</pbs:OrderVariableFields>
+</pbs:Order>
+</pbs:OrderList>]]></InputXML>
+</SubmitOrder>
+</soap12:Body>
+</soap12:Envelope>
