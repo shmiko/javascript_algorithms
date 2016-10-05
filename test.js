@@ -98,3 +98,10 @@ console.log("first ",spacify("logo"));
 // 	return retStr;
 // }
 // console.log("second ",spaceyfi("logo"));
+
+String.prototype.spacify2 = function(){
+  return this.split('').join(' ');
+};
+
+
+console.log('hello world'.spacify2());
