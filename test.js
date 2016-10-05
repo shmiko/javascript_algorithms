@@ -103,5 +103,4 @@ String.prototype.spacify2 = function(){
   return this.split('').join(' ');
 };
 
-
 console.log('hello world'.spacify2());
