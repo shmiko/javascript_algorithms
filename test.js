@@ -88,13 +88,13 @@ function spacify(str) {
 
 console.log("first ",spacify("logo"));
 
-function spaceyfi(str){
-	var retStr;
-	for (var i = 0; i < str.length; i++){
-		console.log("second i ",str[i]);
-		retStr =+ str[i] + " ";
-	}
-	console.log("second result ",retStr);
-	return retStr;
-}
-console.log("second ",spaceyfi("logo"));
+// function spaceyfi(str){
+// 	var retStr;
+// 	for (var i = 0; i < str.length; i++){
+// 		console.log("second i ",str[i]);
+// 		retStr = str[i] + " ";
+// 	}
+// 	console.log("second result ",retStr);
+// 	return retStr;
+// }
+// console.log("second ",spaceyfi("logo"));
