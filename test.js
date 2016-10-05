@@ -78,3 +78,6 @@ var foo = [];
 foo.push(1);
 foo.push(2);
 console.log(foo.length);
+
+var foo = 10 + '20';
+console.log(foo);
