@@ -99,6 +99,7 @@ console.log("first ",spacify("logo"));
 // }
 // console.log("second ",spaceyfi("logo"));
 
+
 String.prototype.spacify2 = function(){
   return this.split('').join(' ');
 };
@@ -111,3 +112,17 @@ function log(){
 };
 
 log('gday', 'world');
+
+
+
+var recursive = function(n) {
+    if(n <= 2) {
+        return 1;
+    } else {
+				var result = this.recursive(n - 1) + this.recursive(n - 2);
+				console.log(result);
+        return result;
+    }
+};
+
+console.log(recursive(4));
