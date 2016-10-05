@@ -72,3 +72,9 @@ for (var i=1; i<=100; i++) {
     !(i%3 && i%5) || (o+=(i+' '));
 }
 console.log(o);
+
+
+var foo = [];
+foo.push(1);
+foo.push(2);
+console.log(foo.length);
