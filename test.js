@@ -91,7 +91,7 @@ console.log("first ",spacify("logo"));
 function spaceyfi(str){
 	var retStr;
 	for (var i = 0; i < str.length; i++){
-		retStr = retStr + i + " ";
+		retStr = retStr + str[i] + " ";
 	}
 	return retStr;
 }
