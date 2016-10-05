@@ -81,3 +81,18 @@ console.log(foo.length);
 
 var foo = 10 + '20';
 console.log(foo);
+
+function spacify(str) {
+  return str.split('').join(' ');
+}
+
+console.log("first ",spacify("logo"));
+
+function spaceyfi(str){
+	var retStr;
+	for (var i = 0; i < str.length; i++){
+		retStr = retStr + i + " ";
+	}
+	return retStr;
+}
+console.log("second ",spaceyfi("logo"));
