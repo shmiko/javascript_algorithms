@@ -119,10 +119,32 @@ var recursive = function(n) {
     if(n <= 2) {
         return 1;
     } else {
-				var result = this.recursive(n - 1) + this.recursive(n - 2);
-				console.log(result);
+				var result = recursive(n - 1) + recursive(n - 2);
+				console.log('result is ',result);
         return result;
     }
 };
 
-console.log(recursive(4));
+console.log(recursive(6));
+
+
+var sumFibs = function sumFibs(num) {
+var n = [1, 1];
+while (n[n.length-1] + n[n.length-2] <= num) {
+n.push(n[n.length-1] + n[n.length-2]);
+}
+console.log(n);
+return n
+};
+
+console.log(sumFibs(4));
+
+
+var stack = {};
+function fib(n){
+  if (n>1)
+    return stack[n] || ( stack[n] = fib(n-1)+fib(n-2) );
+  return n;
+}
+
+console.log(fib(44));
