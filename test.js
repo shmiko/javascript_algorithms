@@ -238,3 +238,24 @@ var fastFib = fib.memoize();
 console.log(fastFib(10));
 console.log(fastFib(13));
 console.log(fastFib(10));
+
+
+function* fib() {
+  var current = a = b = 1;
+
+  yield 1;
+
+  while (true) {
+    current = b;
+
+    yield current;
+
+    b = a + b;
+    a = current;
+  }
+}
+
+sequence = fib();
+sequence.next(); // 1
+sequence.next(); // 1
+sequence.next(); // 2
