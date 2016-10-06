@@ -196,18 +196,18 @@ console.log(fibonacci(4));
 
 var fib = [0, 1];
 for(var i=fib.length; i<10; i++) {
-    fib[i] = fib[i-2] + fin[i-1];
+    fib[i] = fib[i-2] + fib[i-1];
 }
 console.log(fib);
 
-function fib(n, undefined){
-    if(fib.cache[n] === undefined){
-        fib.cache[n] = fib(n-1) + fib(n-2);
-    }
-
-    return fib.cache[n];
-}
-fib.cache = [0, 1, 1];
+// function fib(n, undefined){
+//     if(fib.cache[n] === undefined){
+//         fib.cache[n] = fib(n-1) + fib(n-2);
+//     }
+//
+//     return fib.cache[n];
+// }
+// fib.cache = [0, 1, 1];
 
 
 Function.prototype.memoize = function() {
