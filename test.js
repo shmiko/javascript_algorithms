@@ -182,8 +182,8 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(4));
-Think of it like this.
-
+//Think of it like this.
+/*
    fibonacci(4)   .--------> 2 + 1 = 3
       |          /               |
       --> fibonacci(3) + fibonacci(2)
@@ -192,13 +192,13 @@ Think of it like this.
 1st step -> |                     ^                |
             |                     |                |
             '---->  fibonacci(2) -' + fibonacci(1)-
-
+*/
 
 var fib = [0, 1];
 for(var i=fib.length; i<10; i++) {
     fib[i] = fib[i-2] + fin[i-1];
 }
-console.log(fib);  
+console.log(fib);
 
 function fib(n, undefined){
     if(fib.cache[n] === undefined){
