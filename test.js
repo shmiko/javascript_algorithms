@@ -148,3 +148,63 @@ function fib(n){
 }
 
 console.log(fib(44));
+
+
+var i;
+var fib = []; // Initialize array!
+
+fib[0] = 0;
+fib[1] = 1;
+for(i=2; i<=10; i++)
+{
+    // Next fibonacci number = previous + one before previous
+    // Translated to JavaScript:
+    fib[i] = fib[i-2] + fib[i-1];
+    console.log(fib[i]);
+}
+
+
+fib = function(numMax){
+    for(var fibArray = [0,1], i=0,j=1,k=0; k<numMax;i=j,j=x,k++ ){
+        x=i+j;
+        fibArray.push(x);
+    }
+    console.log(fibArray);
+}
+
+fib(10)
+
+
+function fibonacci(n) {
+   return n < 1 ? 0
+        : n <= 2 ? 1
+        : fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+console.log(fibonacci(4));
+Think of it like this.
+
+   fibonacci(4)   .--------> 2 + 1 = 3
+      |          /               |
+      --> fibonacci(3) + fibonacci(2)
+            |    ^
+            |    ----------- 2 = 1 + 1 <----------.
+1st step -> |                     ^                |
+            |                     |                |
+            '---->  fibonacci(2) -' + fibonacci(1)-
+
+
+var fib = [0, 1];
+for(var i=fib.length; i<10; i++) {
+    fib[i] = fib[i-2] + fin[i-1];
+}
+console.log(fib);  
+
+function fib(n, undefined){
+    if(fib.cache[n] === undefined){
+        fib.cache[n] = fib(n-1) + fib(n-2);
+    }
+
+    return fib.cache[n];
+}
+fib.cache = [0, 1, 1];
