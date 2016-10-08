@@ -21,7 +21,7 @@ dispatcher.setStatic('resources');
 //A sample GET request
 dispatcher.onGet("/beagles", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    // res.end('Beagle Sniffs Code');
+    // res.end('Beagles Sniff Code');
 });
 
 //A sample POST request
