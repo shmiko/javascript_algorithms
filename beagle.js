@@ -18,7 +18,7 @@ function handleRequest(request, response){
 //For all your static (js/css/images/etc.) set the directory name (relative path).
 dispatcher.setStatic('resources');
 
-//A sample GET request
+//A sample GET request eds
 dispatcher.onGet("/beagles", function(req, res) {
     res.writeHead(200, {'Content-Type': 'text/plain'});
     // res.end('Beagles Sniff Code');
